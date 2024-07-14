@@ -1,3 +1,4 @@
+import Features from "./components/Features";
 import Hero from "./components/Hero";
 import Highlights from "./components/Highlights";
 import Modal from "./components/Modal";
@@ -12,8 +13,9 @@ const App = () => {
       <Hero />
       <Highlights />
       <Modal />
+      <Features />
     </main>
   );
 };
 
-export default Sentry(App);
+export default Sentry.withProfiler(App);
